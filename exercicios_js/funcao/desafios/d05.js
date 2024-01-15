@@ -4,4 +4,4 @@ function moeda(valor=1){
     console.log(`Dólar = $${valor.toFixed(2).replace('.',',')}`)
     
 }
-moeda(53.934)
+moeda(53.33333)
