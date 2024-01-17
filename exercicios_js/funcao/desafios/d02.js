@@ -1,10 +1,10 @@
 function triangulos(n1 = 1, n2 = 1, n3 = 1) {
     if (n1 == n2 && n2 == n3) {
-        console.log(`O triangulo com os lados ${n1}, ${n3} e ${n3} é Triangulo Equilátero`)
+        console.log(`O triangulo com os lados ${n1}, ${n2} e ${n3} é Triangulo Equilátero`)
     }
     if (n1 == n2 || n2 == n3) {
         if (n1 != n2 || n2 != n3) {
-            console.log(`O triangulo com os lados ${n1}, ${n3} e ${n3} é Triangulo Isósceles`)
+            console.log(`O triangulo com os lados ${n1}, ${n2} e ${n3} é Triangulo Isósceles`)
         }
     }
     if (n1 != n2 && n2 != n3) {
