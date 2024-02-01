@@ -11,9 +11,7 @@ const menorLista = (valor) => {
                 menor = valor[indice]
             }
         }
-
     }
-    console.log(`O menor numero é ${menor}`)
+    console.log(`Na lista de numeros [${lista.join(', ')}] o menor numero é ${menor}!`)
 }
-
 menorLista(lista)
