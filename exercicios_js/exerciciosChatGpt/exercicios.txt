@@ -28,3 +28,13 @@
 28 Desenvolva uma função que receba um array de números e retorne um novo array com os números ordenados de forma decrescente.
 29 Escreva uma arrow function que receba um número e retorne true se ele for um quadrado perfeito, false caso contrário.
 30 Crie uma função arrow que receba uma string e retorne a mesma string, mas com todas as letras maiúsculas transformadas em minúsculas e vice-versa.
+31 Crie uma arrow function que receba dois números como parâmetros e retorne um objeto contendo as seguintes propriedades: soma, subtração, multiplicação e divisão desses números.
+32 Escreva uma arrow function que receba um objeto com as propriedades base e altura e retorne o valor da área do retângulo.
+33 Desenvolva uma arrow function que receba um objeto com as propriedades nome, idade e cidade e retorne uma string formatada com essas informações.
+34 Crie uma arrow function que receba um objeto representando uma pessoa com propriedades nome, sobrenome, idade e altura, e retorne true se a pessoa for maior de idade e false caso contrário.
+35 Escreva uma arrow function que receba um objeto com as propriedades valor e moeda e retorne uma string formatada com o valor e a moeda.
+36 Desenvolva uma arrow function que receba um objeto representando um produto com propriedades nome, preco e quantidade e retorne o valor total desse produto.
+37 Crie uma arrow function que receba um objeto representando um triângulo com as propriedades base e altura e retorne a área desse triângulo.
+38 Escreva uma arrow function que receba um objeto representando um círculo com a propriedade raio e retorne o comprimento da circunferência.
+39 Desenvolva uma arrow function que receba um objeto representando um carro com as propriedades marca, modelo e ano e retorne uma string formatada com essas informações.
+40 Crie uma arrow function que receba um objeto representando um livro com as propriedades titulo, autor e ano e retorne uma string formatada com essas informações.
