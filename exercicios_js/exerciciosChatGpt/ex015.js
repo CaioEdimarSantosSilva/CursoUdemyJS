@@ -11,7 +11,7 @@ const substituirVogais = string => {
             lista.push(string[indice])
         }
     }
-    console.log(lista.join(''))
+    console.log(`${string} com as vogais substituídas por '*' é ${lista.join('')}`)
 }
 substituirVogais('Lorax')
 
