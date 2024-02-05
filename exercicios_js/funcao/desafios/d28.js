@@ -12,4 +12,4 @@ for(indice in lista) {
  
 }
 
-console.log(`essa lista tem tantos numeros ${par} PAR e tantos numeros ${impar}IMPAR`)
+console.log(`essa lista tem tantos numeros ${par} PAR e tantos numeros ${impar} IMPAR`)
