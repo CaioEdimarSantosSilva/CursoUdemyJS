@@ -6,10 +6,10 @@ final das operações imprima os vetores no console. */
 let vetorPilha = [1, 2, 3, 4, 5]
 let vetorAdiciona = [6, 7, 8, 9, 10]
 
-console.log(vetorPilha)
+console.log(`VetorPilha = [${vetorPilha.join(', ')}]`)
 
 for(indice in vetorAdiciona){
     vetorPilha.push(vetorAdiciona[indice])
 }
 
-console.log(vetorPilha)
+console.log(`VetorPilha com VetorAdicional = [${vetorPilha.join(', ')}]`)
