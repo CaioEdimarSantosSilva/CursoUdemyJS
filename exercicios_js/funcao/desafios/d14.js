@@ -10,7 +10,7 @@ function frutas(fruta = '') {
             console.log(`Aqui a ${fruta} está, são 3 reais o quilo.`)
             break
         default:
-            console.log(TypeError(`Erro, a ${fruta} não tem.`))
+            console.log(`Erro, o ${fruta} não tem.`)
             break
     }
 }
@@ -18,4 +18,5 @@ function frutas(fruta = '') {
 frutas('maçã')
 frutas('kiwi')
 frutas('melancia')
-frutas('banana')
+frutas('Marmitex')
+
