@@ -6,4 +6,4 @@ function fatorial(valor) {
     }
 }
 const valor = 5
-console.log(`O valor ${5} tem como fatorial o ${fatorial(valor)}`)
+console.log(`O valor ${valor} tem como fatorial o ${fatorial(valor)}`)
