@@ -1,0 +1,2 @@
+/**Crie uma arrow function que receba um objeto representando uma pessoa com propriedades nome, sobrenome, idade e altura, e retorne true se a pessoa for maior de idade e false caso contrário */
+const pessoa = {nome: 'Caio', : }
