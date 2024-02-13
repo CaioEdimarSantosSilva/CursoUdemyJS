@@ -38,3 +38,13 @@
 38 Escreva uma arrow function que receba um objeto representando um círculo com a propriedade raio e retorne o comprimento da circunferência.
 39 Desenvolva uma arrow function que receba um objeto representando um carro com as propriedades marca, modelo e ano e retorne uma string formatada com essas informações.
 40 Crie uma arrow function que receba um objeto representando um livro com as propriedades titulo, autor e ano e retorne uma string formatada com essas informações.
+41 Crie uma função construtora para representar um objeto Pessoa com propriedades como nome, idade e profissao.
+42 Escreva uma função construtora para criar objetos Carro com propriedades como marca, modelo e ano.
+43 Crie uma função construtora para representar um objeto Livro com propriedades como titulo, autor e anoPublicacao.
+44 Desenvolva uma função construtora para criar objetos ContaBancaria com propriedades como titular, saldo e tipo.
+45 Escreva uma função construtora para representar um objeto Produto com propriedades como nome, preco e quantidade.
+46 Crie uma função construtora para objetos Cachorro com propriedades como nome, raca e idade.
+47 Desenvolva uma função construtora para criar objetos Ponto com propriedades como x e y.
+48 Escreva uma função construtora para representar um objeto Retangulo com propriedades como largura e altura.
+49 Crie uma função construtora para objetos Aluno com propriedades como nome, matricula e curso.
+50 Desenvolva uma função construtora para criar objetos Funcionario com propriedades como nome, cargo e salario.
