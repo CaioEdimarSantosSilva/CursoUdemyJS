@@ -1,9 +1,9 @@
 Array.prototype.map2 = function(callback){
-    const lista = []
+    const novoLista = []
     for (let i = 0; i < this.length; i++) {
-        lista.push(callback(this[i], i, this))
+        novoLista.push(callback(this[i], i, this))
     }   
-    return lista
+    return novoLista
 }
 
 
