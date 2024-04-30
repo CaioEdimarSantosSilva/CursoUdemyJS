@@ -13,13 +13,38 @@
     <div id='conteudo'></div>
 
     <script>
-        const pessoas = [
-            { nome: 'Ana', nota: 9.1 },
-            { nome: 'Bianca', nota: 8.4 },
-            { nome: 'Carlos', nota: 7.6 },
-            { nome: 'Julia', nota: 9.7 }
-        ]
-        
-        // ...
+        $(function () {
+            const pessoas = [
+                { nome: 'Ana', nota: 9.1 },
+                { nome: 'Bianca', nota: 8.4 },
+                { nome: 'Carlos', nota: 7.6 },
+                { nome: 'Julia', nota: 9.7 }
+            ]
+
+            const linhas = pessoas.map(p => {
+                const tdNome = $('<td>').html(p.nome)
+                const tdNota = $('<td>').html(p.nota)
+                // return $('<tr>').append(tdNome).append(tdNota)
+                // return $('<tr>').append( [tdNome, tdNota])
+                return $('<tr>').append(tdNome, tdNota)
+            })
+
+            const tabela = $('<table>').append(linhas)
+                .css('border', 'solid 5px')
+            $('#conteudo').append(tabela)
+
+        })
+
+        //
+        /*$('div[id]').append('<table></table>')
+        $('table').append('<tr><th>Nome</th><th>Nota</th></tr>')
+
+        for (pessoa in pessoas) {
+            $('table').append(`<tr><td>${pessoas[pessoa].nome}</td><td>${pessoas[pessoa].nota}</td></tr>`)
+        }
+         $('table').append('<tr><td>Ana</td><td>9.1</td></tr>')
+         $('table').append('<tr><td>Bianca</td><td>8.4</td></tr>')
+         $('table').append('<tr><td>Carlos</td><td>7.6</td></tr>')
+         $('table').append('<tr><td>Julia</td><td>9.7</td></tr>')*/
     </script>
 </body>
