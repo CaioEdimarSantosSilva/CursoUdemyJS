@@ -31,7 +31,7 @@ Importe e use a classe em outro arquivo para testar o contador.
 6- Crie um arquivo auth.js que exporta funções como login e logout.
 A função login deve aceitar um objeto Usuario e usar this para acessar métodos de verificação.
 Importe o módulo e use as funções em um outro arquivo.
-Criação de um jogo simples com classes e módulos:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
