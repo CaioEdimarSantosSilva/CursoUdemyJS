@@ -45,13 +45,13 @@ Sistema de tarefas (todo):
 8- Crie um arquivo tarefa.js que define uma classe Tarefa com métodos para adicionar, remover e listar tarefas.
 Use module.exports para exportar a classe e this para acessar tarefas.
 Implemente o sistema de tarefas em um outro arquivo.
-Manipulação de strings com módulos:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 9- Crie um arquivo manipulaString.js que exporta funções para manipular strings, como reverterString, capitalizar, e contarVogais.
 Importe e use essas funções em outro arquivo.
-Criar uma API simulada com funções:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 

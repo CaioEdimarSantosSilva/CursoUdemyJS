@@ -15,10 +15,10 @@ class Inimigo {
 class Jogo {
     calcular(jogador, inimigo){
         if(jogador.valor < inimigo.valor){
-            console.log('Jogador Venceu! ):')
+            console.log('Jogador Venceu! (:')
         }
         else if(jogador.valor > inimigo.valor){
-            console.log('Jogador Perdeu! (:')
+            console.log('Jogador Perdeu! ):')
         }
         else{
             console.log('Empate! |:')
