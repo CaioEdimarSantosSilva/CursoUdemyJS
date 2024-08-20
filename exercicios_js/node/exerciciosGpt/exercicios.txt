@@ -80,8 +80,6 @@ Agrupamento de Objetos:
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 3- Crie um arquivo agrupamento.js que exporta uma função agruparPorCategoria que usa o lodash para agrupar objetos de um array com base em uma propriedade, como categoria.
-Em outro arquivo, crie um array de objetos e use a função para agrupá-los.
-Contagem de Elementos em um Array:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -93,13 +91,13 @@ Remoção de Duplicados em um Array:
 
 5- Crie um arquivo removerDuplicados.js que exporta uma função removerDuplicados que usa o lodash para remover duplicados de um array.
 Importe essa função em outro arquivo e teste-a com diferentes arrays.
-Classe de Pessoa com this e Lodash:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 6- Crie um arquivo pessoa.js que define uma classe Pessoa com métodos como saudar e obterIniciais, onde this é usado para acessar as propriedades da pessoa, e o lodash é usado para manipular strings (por exemplo, para obter iniciais).
 Exporte a classe e use-a em outro arquivo para criar uma pessoa e utilizar seus métodos.
-Módulo de Análise de Texto:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
