@@ -103,7 +103,6 @@ Exporte a classe e use-a em outro arquivo para criar uma pessoa e utilizar seus 
 
 7- Crie um arquivo analiseTexto.js que exporta funções como contarPalavras, contarCaracteres, e encontrarPalavraMaisLonga usando o lodash.
 Importe e use essas funções em outro arquivo para analisar textos diferentes.
-Combinação de Arrays:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -115,7 +114,7 @@ Verificação de Propriedades em Objetos:
 
 9- Crie um arquivo verificarPropriedades.js que exporta uma função verificarPropriedadeEmObjetos que usa o lodash para verificar se uma determinada propriedade existe em todos os objetos de um array.
 Importe essa função em outro arquivo e teste-a com diferentes objetos.
-Módulo de Processamento de Dados:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
