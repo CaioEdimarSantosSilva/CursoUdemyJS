@@ -1,0 +1,20 @@
+insert into tipo (nome)
+values 
+('aco'),
+('agua'),
+('dragao'),
+('eletrico'),
+('fada'),
+('fantasma'),
+('fogo'),
+('gelo'),
+('grama'),
+('inseto'),
+('lutador'),
+('normal'),
+('pedra'),
+('psiquico'),
+('sombrio'),
+('terra'),
+('venenoso'),
+('voador')
