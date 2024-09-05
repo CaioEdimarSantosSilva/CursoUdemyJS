@@ -1,0 +1,3 @@
+SELECT * FROM `pokedex`
+ORDER BY altura DESC
+LIMIT 10

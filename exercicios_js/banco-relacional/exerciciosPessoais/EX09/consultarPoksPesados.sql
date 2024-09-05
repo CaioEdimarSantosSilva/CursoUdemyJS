@@ -1,0 +1,3 @@
+SELECT * FROM `pokedex`
+ORDER BY peso DESC
+LIMIT 10
