@@ -4,7 +4,5 @@ SELECT
 FROM pokedex p
 JOIN pokedex_tipo pt ON p.id = pt.pokedex_id
 JOIN tipo t ON pt.tipo_id = t.id
-WHERE t.nome = 'sombrio'
+WHERE t.nome = 'fogo'
 GROUP BY p.id, p.nome;
-
-
