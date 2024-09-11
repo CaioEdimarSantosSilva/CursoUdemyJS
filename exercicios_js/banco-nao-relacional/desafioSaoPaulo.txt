@@ -1,0 +1,17 @@
+Estado
+nome = São Paulo, sigla = SP, Regiao = Sudeste
+    cidades
+    nome = Caompinas, area = 795.7, prefeito = Jonas Donizette, populacao = 1081000
+    nome = Guarulhos, populacao = 1325000
+    nome = Sorocaba, distanciaCapital = 87, populacao = 644919
+
+
+ db.estados.insert({
+    nome: "São Paulo",
+    sigla: "SP",
+    regiao: "Sudeste",
+     cidades: [
+    {_id: ObjectId(), nome: "Niterói", area: 133.9, prefeito: "Jonas Donizette", populacao: 487562},
+    {_id: ObjectId(), nome: "Guarulhos", populacao: 1325000},
+    {_id: ObjectId(), nome: "Sorocaba", distanciaCapital: 87, populacao: 644919}]
+    })
