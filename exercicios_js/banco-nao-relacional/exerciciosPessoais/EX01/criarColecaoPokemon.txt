@@ -1,0 +1,85 @@
+Coleção pokemons:
+- Contém informações básicas sobre cada Pokémon.
+- Campos: nome, tipo1, tipo2, altura, peso, habilidades, estatisticas, evolucoes.
+
+
+
+
+db.pokemons.insert({
+    nome: "Charmander",
+    tipo1: "Fogo",
+    altura: 0.6,
+    peso: 8.5,
+    habilidades: [ 
+        {habilidade: "Blaze"},
+        {habilidadeOculta: "Solar Power"}
+    ],
+    statusBasicos: {
+        hp: 39,
+        ataque: 52,
+        defesa: 43,
+        SpAtaque: 60,
+        SpDefesa: 50,
+        velocidade: 65,
+        total: 309
+    },
+    evolucoes: {
+        primeira: "Charmander",
+        segunda: "Charmeleon",
+        terceira: "Charizard"
+    } 
+})
+
+
+
+
+db.pokemons.insertMany([
+    {
+    nome: "Squirtle",
+    tipo1: "Agua",
+    altura: 0.5,
+    peso: 9.0,
+    habilidades: [ 
+        {habilidade: "Torrent"},
+        {habilidadeOculta: "Rain Dish"}
+    ],
+    statusBasicos: {
+        hp: 44,
+        ataque: 48,
+        defesa: 65,
+        SpAtaque: 50,
+        SpDefesa: 64,
+        velocidade: 43,
+        total: 314
+    },
+    evolucoes: {
+        primeira: "Squirtle",
+        segunda: "Wartortle",
+        terceira: "Blastoise"
+    } 
+},
+{
+    nome: "Bulbasaur",
+    tipo1: "Grama",
+    altura: 0.7,
+    peso: 6.9,
+    habilidades: [ 
+        {habilidade: "Overgrow"},
+        {habilidadeOculta: "Chlorophyll"}
+    ],
+    statusBasicos: {
+        hp: 45,
+        ataque: 49,
+        defesa: 49,
+        SpAtaque: 65,
+        SpDefesa: 65,
+        velocidade: 45,
+        total: 318
+    },
+    evolucoes: {
+        primeira: "Bulbasaur",
+        segunda: "Ivysaur",
+        terceira: "Venusaur"
+    } 
+}
+])
