@@ -1,4 +1,4 @@
-db.pokemons.insertMany([
+db.pokemons.insertMany([ 
     {
         nome: "Greninja",
         tipo1: ObjectId('66e9668e1acbf7078bc73bf9'), // Agua
@@ -56,7 +56,6 @@ db.pokemons.insertMany([
         peso: 40.5,
         habilidades: [
             { habilidade: "Cursed Body" }
-            
         ],
         statusBasicos: { 
             hp: 60,
@@ -79,7 +78,7 @@ db.pokemons.insertMany([
         altura: 0.3,
         peso: 6.5,
         habilidades: [
-            { habilidade: ["Run Away" , "Adaptability"]},
+            { habilidade: ["Run Away", "Adaptability"]},
             { habilidadeOculta: "Anticipation" }
         ],
         statusBasicos: { 
@@ -93,6 +92,74 @@ db.pokemons.insertMany([
         },
         evolucoes: {
             primeira: "Eevee"
+        }
+    },
+    {
+        nome: "Mewtwo",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c03'), // Psiquico
+        altura: 2.0,
+        peso: 122.0,
+        habilidades: [
+            { habilidade: "Pressure" },
+            { habilidadeOculta: "Unnerve" }
+        ],
+        statusBasicos: { 
+            hp: 106,
+            ataque: 110,
+            defesa: 90,
+            SpAtaque: 154,
+            SpDefesa: 90,
+            velocidade: 130,
+            total: 680
+        },
+        evolucoes: {
+            primeira: "Mewtwo"
+        }
+    },
+    {
+        nome: "Hitmonchan",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c02'), // Lutador
+        altura: 1.4,
+        peso: 50.2,
+        habilidades: [
+            { habilidade: ["Keen Eye", "Iron Fist"]},
+            { habilidadeOculta: "Inner Focus" }
+        ],
+        statusBasicos: { 
+            hp: 50,
+            ataque: 105,
+            defesa: 79,
+            SpAtaque: 35,
+            SpDefesa: 110,
+            velocidade: 76,
+            total: 455
+        },
+        evolucoes: {
+            primeira: "Tyrogue",
+            segunda: "Hitmonchan"
+        }
+    },
+    {
+        nome: "Skarmory",
+        tipo1: ObjectId('66e9668e1acbf7078bc73bfe'), // Aco
+        tipo2: ObjectId('66e9668e1acbf7078bc73c00'), // Voador
+        altura: 1.7,
+        peso: 50.5,
+        habilidades: [
+            { habilidade: ["Keen Eye", "Sturdy"] },
+            { habilidadeOculta: "Weak Armor" }
+        ],
+        statusBasicos: { 
+            hp: 65,
+            ataque: 80,
+            defesa: 140,
+            SpAtaque: 40,
+            SpDefesa: 70,
+            velocidade: 70,
+            total: 465
+        },
+        evolucoes: {
+            primeira: "Skarmory"
         }
     },
     {
@@ -118,13 +185,10 @@ db.pokemons.insertMany([
             primeira: "Scyther",
             segunda: "Scizor"
         }
-    }
-])
-
-db.pokemons.insertMany([
+    },
     {
         nome: "Garchomp",
-        tipo1: ObjectId('66e9668e1acbf7078bc73c06'), // Dragão
+        tipo1: ObjectId('66e9668e1acbf7078bc73c06'), // Dragao
         tipo2: ObjectId('66e9668e1acbf7078bc73bfc'), // Terra
         altura: 1.9,
         peso: 95.0,
@@ -136,8 +200,8 @@ db.pokemons.insertMany([
             hp: 108,
             ataque: 130,
             defesa: 95,
-            ataque_especial: 80,
-            defesa_especial: 85,
+            SpAtaque: 80,
+            SpDefesa: 85,
             velocidade: 102,
             total: 600
         },
@@ -160,8 +224,8 @@ db.pokemons.insertMany([
             hp: 71,
             ataque: 95,
             defesa: 85,
-            ataque_especial: 110,
-            defesa_especial: 95,
+            SpAtaque: 110,
+            SpDefesa: 95,
             velocidade: 79,
             total: 535
         },
@@ -173,7 +237,7 @@ db.pokemons.insertMany([
     },
     {
         nome: "Gardevoir",
-        tipo1: ObjectId('66e9668e1acbf7078bc73c03'), // Psíquico
+        tipo1: ObjectId('66e9668e1acbf7078bc73c03'), // Psiquico
         tipo2: ObjectId('66e9668e1acbf7078bc73c08'), // Fada
         altura: 1.6,
         peso: 48.4,
@@ -185,8 +249,8 @@ db.pokemons.insertMany([
             hp: 68,
             ataque: 65,
             defesa: 65,
-            ataque_especial: 125,
-            defesa_especial: 115,
+            SpAtaque: 125,
+            SpDefesa: 115,
             velocidade: 80,
             total: 518
         },
@@ -198,7 +262,7 @@ db.pokemons.insertMany([
     },
     {
         nome: "Graveler",
-        tipo1: ObjectId('66e9668e1acbf7078bc73bfd'), // Pedra
+        tipo1: ObjectId('66e9668e1acbf7078bc73bfd'), // Rocha
         tipo2: ObjectId('66e9668e1acbf7078bc73bfc'), // Terra
         altura: 1.0,
         peso: 105.0,
@@ -210,8 +274,8 @@ db.pokemons.insertMany([
             hp: 55,
             ataque: 95,
             defesa: 115,
-            ataque_especial: 45,
-            defesa_especial: 45,
+            SpAtaque: 45,
+            SpDefesa: 45,
             velocidade: 35,
             total: 390
         },
@@ -222,6 +286,9 @@ db.pokemons.insertMany([
         }
     }
 ]);
+
+
+
 
 
 
