@@ -1,0 +1,109 @@
+ Criação de Coleções Separadas:
+   - Crie a coleção tipos e insira os tipos de Kanto, como fogo, água, grama, etc.
+   - Crie a coleção treinadores e adicione um treinador com um array de Pokémon capturados.
+
+db.tipos.insertMany([
+    {
+        nome: "Fogo",
+        vantagens: ["Grama", "Gelo", "Aco", "Inseto"],
+        fraquezas: ["Agua", "Terra", "Rocha"]
+    },
+    {
+        nome: "Agua",
+        vantagens: ["Fogo", "Rocha", "Terra"],
+        fraquezas: ["Eletrico", "Grama"]
+    },
+    {
+        nome: "Grama",
+        vantagens: ["Agua", "Rocha", "Terra"],
+        fraquezas: ["Fogo", "Gelo", "Voador", "Veneno", "Inseto"]
+    },
+    {
+        nome: "Eletrico",
+        vantagens: ["Agua", "Voador"],
+        fraquezas: ["Terra"]
+    },
+    {
+        nome: "Terra",
+        vantagens: ["Fogo", "Eletrico", "Veneno"],
+        fraquezas: ["Agua", "Gelo", "Grama"]
+    },
+    {
+        nome: "Rocha",
+        vantagens: ["Fogo", "Gelo", "Voador"],
+        fraquezas: ["Agua", "Grama", "Lutador", "Terra", "Aco"]
+    },
+    {
+        nome: "Aco",
+        vantagens: ["Gelo", "Rocha", "Fada"],
+        fraquezas: ["Fogo", "Lutador", "Terra"]
+    },
+    {
+        nome: "Gelo",
+        vantagens: ["Grama", "Terra", "Voador", "Dragao"],
+        fraquezas: ["Fogo", "Lutador", "Rocha", "Aco"]
+    },
+    {
+        nome: "Voador",
+        vantagens: ["Grama", "Lutador", "Inseto"],
+        fraquezas: ["Eletrico", "Gelo", "Rocha"]
+    },
+    {
+        nome: "Inseto",
+        vantagens: ["Grama", "Psiquico", "Sombrio"],
+        fraquezas: ["Fogo", "Voador"]
+    },
+    {
+        nome: "Lutador",
+        vantagens: ["Normal", "Rocha", "Sombrio", "Aco"],
+        fraquezas: ["Voador", "Psiquico", "Fada"]
+    },
+    {
+        nome: "Psiquico",
+        vantagens: ["Lutador", "Veneno"],
+        fraquezas: ["Inseto", "Fantasma", "Sombrio"]
+    },
+    {
+        nome: "Veneno",
+        vantagens: ["Grama", "Fada"],
+        fraquezas: ["Terra", "Psiquico"]
+    },
+    {
+        nome: "Fantasma",
+        vantagens: ["Psiquico", "Fantasma"],
+        fraquezas: ["Fantasma", "Sombrio"]
+    },
+    {
+        nome: "Dragao",
+        vantagens: ["Dragao"],
+        fraquezas: ["Gelo", "Dragao", "Fada"]
+    },
+    {
+        nome: "Sombrio",
+        vantagens: ["Psiquico", "Fantasma"],
+        fraquezas: ["Lutador", "Inseto", "Fada"]
+    },
+    {
+        nome: "Fada",
+        vantagens: ["Lutador", "Dragao", "Sombrio"],
+        fraquezas: ["Veneno", "Aco"]
+    },
+    {
+        nome: "Normal",
+        vantagens: [],
+        fraquezas: ["Lutador"]
+    }
+])
+
+
+
+
+
+db.treinadores.insertMany([
+    {nome: "Lightyear", 
+    cidade_origem: "Pallet", 
+    pokemons: [{_id: "66e8215da91e19976fc73bf9"}]},
+    {nome: "Azien",
+    cidade_origem: "Pallet",
+    pokemons: [{_id: "66e81f92a91e19976fc73bf8"}]},
+])

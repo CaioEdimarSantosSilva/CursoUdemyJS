@@ -1,0 +1,246 @@
+db.pokemons.insertMany([
+    {
+        nome: "Greninja",
+        tipo1: ObjectId('66e9668e1acbf7078bc73bf9'), // Agua
+        tipo2: ObjectId('66e9668e1acbf7078bc73c07'), // Sombrio
+        altura: 1.5,
+        peso: 40.0,
+        habilidades: [
+            { habilidade: "Torrent" },
+            { habilidadeOculta: "Protean" }
+        ],
+        statusBasicos: { 
+            hp: 72,
+            ataque: 95,
+            defesa: 67,
+            SpAtaque: 103,
+            SpDefesa: 71,
+            velocidade: 122,
+            total: 530
+        },
+        evolucoes: {
+            primeira: "Froakie",
+            segunda: "Frogadier",
+            terceira: "Greninja"
+        }
+    },
+    {
+        nome: "Pikachu",
+        tipo1: ObjectId('66e9668e1acbf7078bc73bfb'), // Eletrico
+        altura: 0.4,
+        peso: 6.0,
+        habilidades: [
+            { habilidade: "Static" },
+            { habilidadeOculta: "Lightning Rod" }
+        ],
+        statusBasicos: { 
+            hp: 35,
+            ataque: 55,
+            defesa: 40,
+            SpAtaque: 50,
+            SpDefesa: 50,
+            velocidade: 90,
+            total: 320
+        },
+        evolucoes: {
+            primeira: "Pichu",
+            segunda: "Pikachu",
+            terceira: "Raichu"
+        }
+    },
+    {
+        nome: "Gengar",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c05'), // Fantasma
+        tipo2: ObjectId('66e9668e1acbf7078bc73c04'), // Veneno
+        altura: 1.5,
+        peso: 40.5,
+        habilidades: [
+            { habilidade: "Cursed Body" }
+            
+        ],
+        statusBasicos: { 
+            hp: 60,
+            ataque: 65,
+            defesa: 60,
+            SpAtaque: 130,
+            SpDefesa: 75,
+            velocidade: 110,
+            total: 500
+        },
+        evolucoes: {
+            primeira: "Gastly",
+            segunda: "Haunter",
+            terceira: "Gengar"
+        }
+    },
+    {
+        nome: "Eevee",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c09'), // Normal
+        altura: 0.3,
+        peso: 6.5,
+        habilidades: [
+            { habilidade: ["Run Away" , "Adaptability"]},
+            { habilidadeOculta: "Anticipation" }
+        ],
+        statusBasicos: { 
+            hp: 55,
+            ataque: 55,
+            defesa: 50,
+            SpAtaque: 45,
+            SpDefesa: 65,
+            velocidade: 55,
+            total: 325
+        },
+        evolucoes: {
+            primeira: "Eevee"
+        }
+    },
+    {
+        nome: "Scyther",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c01'), // Inseto
+        tipo2: ObjectId('66e9668e1acbf7078bc73c00'), // Voador
+        altura: 1.5,
+        peso: 56.0,
+        habilidades: [
+            { habilidade: ["Swarm", "Technician"] },
+            { habilidadeOculta: "Steadfast" }
+        ],
+        statusBasicos: { 
+            hp: 70,
+            ataque: 110,
+            defesa: 80,
+            SpAtaque: 55,
+            SpDefesa: 80,
+            velocidade: 105,
+            total: 500
+        },
+        evolucoes: {
+            primeira: "Scyther",
+            segunda: "Scizor"
+        }
+    }
+])
+
+db.pokemons.insertMany([
+    {
+        nome: "Garchomp",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c06'), // Dragão
+        tipo2: ObjectId('66e9668e1acbf7078bc73bfc'), // Terra
+        altura: 1.9,
+        peso: 95.0,
+        habilidades: [
+            { habilidade: "Sand Veil" },
+            { habilidadeOculta: "Rough Skin" }
+        ],
+        statusBasicos: { 
+            hp: 108,
+            ataque: 130,
+            defesa: 95,
+            ataque_especial: 80,
+            defesa_especial: 85,
+            velocidade: 102,
+            total: 600
+        },
+        evolucoes: {
+            primeira: "Gible",
+            segunda: "Gabite",
+            terceira: "Garchomp"
+        }
+    },
+    {
+        nome: "Vanilluxe",
+        tipo1: ObjectId('66e9668e1acbf7078bc73bff'), // Gelo
+        altura: 1.3,
+        peso: 57.5,
+        habilidades: [
+            { habilidade: ["Ice Body", "Snow Warning"] },
+            { habilidadeOculta: "Weak Armor" }
+        ],
+        statusBasicos: { 
+            hp: 71,
+            ataque: 95,
+            defesa: 85,
+            ataque_especial: 110,
+            defesa_especial: 95,
+            velocidade: 79,
+            total: 535
+        },
+        evolucoes: {
+            primeira: "Vanillite",
+            segunda: "Vanillish",
+            terceira: "Vanilluxe"
+        }
+    },
+    {
+        nome: "Gardevoir",
+        tipo1: ObjectId('66e9668e1acbf7078bc73c03'), // Psíquico
+        tipo2: ObjectId('66e9668e1acbf7078bc73c08'), // Fada
+        altura: 1.6,
+        peso: 48.4,
+        habilidades: [
+            { habilidade: ["Synchronize", "Trace"] },
+            { habilidadeOculta: "Telepathy" }
+        ],
+        statusBasicos: { 
+            hp: 68,
+            ataque: 65,
+            defesa: 65,
+            ataque_especial: 125,
+            defesa_especial: 115,
+            velocidade: 80,
+            total: 518
+        },
+        evolucoes: {
+            primeira: "Ralts",
+            segunda: "Kirlia",
+            terceira: "Gardevoir"
+        }
+    },
+    {
+        nome: "Graveler",
+        tipo1: ObjectId('66e9668e1acbf7078bc73bfd'), // Pedra
+        tipo2: ObjectId('66e9668e1acbf7078bc73bfc'), // Terra
+        altura: 1.0,
+        peso: 105.0,
+        habilidades: [
+            { habilidade: ["Rock Head", "Sturdy"] },
+            { habilidadeOculta: "Sand Veil" }
+        ],
+        statusBasicos: { 
+            hp: 55,
+            ataque: 95,
+            defesa: 115,
+            ataque_especial: 45,
+            defesa_especial: 45,
+            velocidade: 35,
+            total: 390
+        },
+        evolucoes: {
+            primeira: "Geodude",
+            segunda: "Graveler",
+            terceira: "Golem"
+        }
+    }
+]);
+
+
+
+
+
+
+charmander - fogo
+Squirtle - agua
+Bulbasaur - grama
+
+grininja - agua, Sombrio 
+pikachu - eletrico 
+gengar - fantasma - Veneno
+eevee - Normal
+mewtwo - Psiquico
+himonchan - lutador 
+skarmory - aço e voador
+scyther - inseto e voador 
+Garchomp - dragao e Terra
+vanilluxe - gelo
+gardevoir - Psiquico e Fada
+graveler - pedra e terra
