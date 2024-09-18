@@ -287,13 +287,11 @@ db.pokemons.insertMany([
     }
 ]);
 
+db.pokemons.update({nome: "Charmander"},{$set: {tipo1: "66e9668e1acbf7078bc73bf8"}})
 
+db.pokemons.update({nome: "Squirtle"},{$set: {tipo1: "66e9668e1acbf7078bc73bf9"}})
 
-
-
-
-
-
+db.pokemons.update({nome: "Bulbasaur"},{$set: {tipo1: "66e9668e1acbf7078bc73bfa"}})
 
 charmander - fogo
 Squirtle - agua

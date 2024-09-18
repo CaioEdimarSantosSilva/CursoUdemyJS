@@ -1,0 +1,40 @@
+db.treinadores.aggregate([
+    {
+        $lookup: {
+            from: "pokemons",
+            localField: "pokemons",
+            foreignField: "_id",
+            as: "pokes"
+        }
+    },
+    {
+    $project: {
+        nome: 1,
+        "pokes.nome": 1 
+    }
+    }
+])
+
+db.treinadores.insertMany([
+    {nome: "Lightyear", 
+    cidade_origem: "Pallet", 
+    pokemons: [{_id: "66eabc06d4ed6377e7c73bfb"}]},
+    {nome: "Azien",
+    cidade_origem: "Pallet",
+    pokemons: [{_id: "66eabbeed4ed6377e7c73bfa"}]},
+])
+
+db.treinadores.update({nome: "Lightyear"},{$set:
+{pokemons: [ObjectId("66eabc06d4ed6377e7c73bfb"),
+ObjectId("66eabc8bd4ed6377e7c73c05")]}})
+
+db.treinadores.update({nome: "Azien"},{$set:
+{pokemons: [ObjectId("66eabc8bd4ed6377e7c73c01"),
+ObjectId("66eabbeed4ed6377e7c73bfa")]}})
+
+db.treinadores.update({nome: "Kdu"},{$set:
+{pokemons: [ObjectId("66eabbeed4ed6377e7c73bfa")]}})
+
+db.treinadores.update({nome: "Azien"},{$set:
+{pokemons: {_id: "66eabc8bd4ed6377e7c73c01"}}})
+

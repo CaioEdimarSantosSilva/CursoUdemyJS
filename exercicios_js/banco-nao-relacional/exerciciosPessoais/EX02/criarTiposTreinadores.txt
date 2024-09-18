@@ -102,8 +102,8 @@ db.tipos.insertMany([
 db.treinadores.insertMany([
     {nome: "Lightyear", 
     cidade_origem: "Pallet", 
-    pokemons: [{_id: "66e8215da91e19976fc73bf9"}]},
+    pokemons: [{_id: "66eabc06d4ed6377e7c73bfb"}]},
     {nome: "Azien",
     cidade_origem: "Pallet",
-    pokemons: [{_id: "66e81f92a91e19976fc73bf8"}]},
+    pokemons: [{_id: "66eabbeed4ed6377e7c73bfa"}]},
 ])

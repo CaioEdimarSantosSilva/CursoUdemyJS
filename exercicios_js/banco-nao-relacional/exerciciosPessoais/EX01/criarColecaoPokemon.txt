@@ -7,7 +7,7 @@ Coleção pokemons:
 
 db.pokemons.insert({
     nome: "Charmander",
-    tipo1: "Fogo",
+    tipo1: ObjectId('66e9668e1acbf7078bc73bf8'),
     altura: 0.6,
     peso: 8.5,
     habilidades: [ 
@@ -36,7 +36,7 @@ db.pokemons.insert({
 db.pokemons.insertMany([
     {
     nome: "Squirtle",
-    tipo1: "Agua",
+    tipo1: ObjectId('66e9668e1acbf7078bc73bf9'),
     altura: 0.5,
     peso: 9.0,
     habilidades: [ 
@@ -60,7 +60,7 @@ db.pokemons.insertMany([
 },
 {
     nome: "Bulbasaur",
-    tipo1: "Grama",
+    tipo1: ObjectId('66e9668e1acbf7078bc73bfa'),
     altura: 0.7,
     peso: 6.9,
     habilidades: [ 
