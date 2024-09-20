@@ -1,0 +1,111 @@
+pokedex> db.tipos.find().pretty()
+[
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bf8'),
+    nome: 'Fogo',
+    vantagens: [ 'Grama', 'Gelo', 'Aco', 'Inseto' ],
+    fraquezas: [ 'Agua', 'Terra', 'Rocha' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bf9'),
+    nome: 'Agua',
+    vantagens: [ 'Fogo', 'Rocha', 'Terra' ],
+    fraquezas: [ 'Eletrico', 'Grama' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bfa'),
+    nome: 'Grama',
+    vantagens: [ 'Agua', 'Rocha', 'Terra' ],
+    fraquezas: [ 'Fogo', 'Gelo', 'Voador', 'Veneno', 'Inseto' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bfb'),
+    nome: 'Eletrico',
+    vantagens: [ 'Agua', 'Voador' ],
+    fraquezas: [ 'Terra' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bfc'),
+    nome: 'Terra',
+    vantagens: [ 'Fogo', 'Eletrico', 'Veneno' ],
+    fraquezas: [ 'Agua', 'Gelo', 'Grama' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bfd'),
+    nome: 'Rocha',
+    vantagens: [ 'Fogo', 'Gelo', 'Voador' ],
+    fraquezas: [ 'Agua', 'Grama', 'Lutador', 'Terra', 'Aco' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bfe'),
+    nome: 'Aco',
+    vantagens: [ 'Gelo', 'Rocha', 'Fada' ],
+    fraquezas: [ 'Fogo', 'Lutador', 'Terra' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73bff'),
+    nome: 'Gelo',
+    vantagens: [ 'Grama', 'Terra', 'Voador', 'Dragao' ],
+    fraquezas: [ 'Fogo', 'Lutador', 'Rocha', 'Aco' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c00'),
+    nome: 'Voador',
+    vantagens: [ 'Grama', 'Lutador', 'Inseto' ],
+    fraquezas: [ 'Eletrico', 'Gelo', 'Rocha' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c01'),
+    nome: 'Inseto',
+    vantagens: [ 'Grama', 'Psiquico', 'Sombrio' ],
+    fraquezas: [ 'Fogo', 'Voador' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c02'),
+    nome: 'Lutador',
+    vantagens: [ 'Normal', 'Rocha', 'Sombrio', 'Aco' ],
+    fraquezas: [ 'Voador', 'Psiquico', 'Fada' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c03'),
+    nome: 'Psiquico',
+    vantagens: [ 'Lutador', 'Veneno' ],
+    fraquezas: [ 'Inseto', 'Fantasma', 'Sombrio' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c04'),
+    nome: 'Veneno',
+    vantagens: [ 'Grama', 'Fada' ],
+    fraquezas: [ 'Terra', 'Psiquico' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c05'),
+    nome: 'Fantasma',
+    vantagens: [ 'Psiquico', 'Fantasma' ],
+    fraquezas: [ 'Fantasma', 'Sombrio' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c06'),
+    nome: 'Dragao',
+    vantagens: [ 'Dragao' ],
+    fraquezas: [ 'Gelo', 'Dragao', 'Fada' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c07'),
+    nome: 'Sombrio',
+    vantagens: [ 'Psiquico', 'Fantasma' ],
+    fraquezas: [ 'Lutador', 'Inseto', 'Fada' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c08'),
+    nome: 'Fada',
+    vantagens: [ 'Lutador', 'Dragao', 'Sombrio' ],
+    fraquezas: [ 'Veneno', 'Aco' ]
+  },
+  {
+    _id: ObjectId('66e9668e1acbf7078bc73c09'),
+    nome: 'Normal',
+    vantagens: [],
+    fraquezas: [ 'Lutador' ]
+  }
+]
