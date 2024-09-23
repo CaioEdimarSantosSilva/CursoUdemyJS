@@ -1,0 +1,32 @@
+Coleção regioes:
+- Contém todas as regiões do universo Pokémon.
+- Campos: _id, nome, descricao, cidade_inicial.
+- Exemplo: { nome: "Kanto", descricao: "Primeira região Pokémon", cidade_inicial: "Pallet" }.
+Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos
+
+db.regioes.insertMany([
+    {
+    nome: "Kanto",
+    cidade_inicial: "Pallet Towm"
+    },
+    {
+    nome: "Johto",
+    cidade_inicial: "New Bark Towm"
+    },
+    {
+    nome: "Hoenn",
+    cidade_inicial: "Littleroot Towm"
+    },
+    {
+    nome: "Sinnoh",
+    cidade_inicial: "Twinleaf Towm"
+    },
+    {
+    nome: "Unova",
+    cidade_inicial: "Nuvema Towm"
+    },
+    {
+    nome: "Kalos",
+    cidade_inicial: "Vaniville Towm"
+    },
+])

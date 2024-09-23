@@ -1,0 +1,22 @@
+Join de Treinadores e Pokémon:
+- Use $lookup para encontrar todos os Pokémon capturados por um treinador específico.
+- Exemplo: Relacione os Pokémon capturados por Ash com os ids armazenados no array pokemons na coleção treinadores.
+
+
+db.treinadores.aggregate([
+    {$match: {
+        nome: "Lightyear"
+    }},
+    {$lookup: {
+        from: "pokemons",
+        localField: "pokemons",
+        foreignField: "_id",
+        as: "pokemon"
+    }},
+    {
+    $project: {
+        _id: 0,
+        nome: 1,
+        "pokemon.nome": 1,
+    }}
+]).pretty()
