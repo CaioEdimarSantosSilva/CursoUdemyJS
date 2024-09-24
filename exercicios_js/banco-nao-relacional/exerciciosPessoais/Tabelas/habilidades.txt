@@ -1,4 +1,3 @@
-pokedex> db.habilidades.find().toArray()
 [
   { _id: ObjectId('66ec0fa7b66e26c6edc73c15'), nome: 'Blaze' },
   { _id: ObjectId('66ec0fa7b66e26c6edc73c16'), nome: 'Overgrow' },
@@ -75,6 +74,11 @@ pokedex> db.habilidades.find().toArray()
   {
     _id: ObjectId('66ec0fb3b66e26c6edc73c31'),
     nome: 'Telepathy',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0fb3b66e26c6edc73c21'),
+    nome: 'Sand Veil',
     oculta: true
   }
 ]

@@ -1,4 +1,3 @@
-pokedex> db.pokemons.find().pretty()
 [
   {
     _id: ObjectId('66eabbeed4ed6377e7c73bfa'),
@@ -6,7 +5,10 @@ pokedex> db.pokemons.find().pretty()
     tipo1: ObjectId('66e9668e1acbf7078bc73bf8'),
     altura: 0.6,
     peso: 8.5,
-    habilidades: [ { habilidade: 'Blaze' }, { habilidadeOculta: 'Solar Power' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c15') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c26') }
+    ],
     statusBasicos: {
       hp: 39,
       ataque: 52,
@@ -20,7 +22,8 @@ pokedex> db.pokemons.find().pretty()
       primeira: 'Charmander',
       segunda: 'Charmeleon',
       terceira: 'Charizard'
-    }
+    },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc06d4ed6377e7c73bfb'),
@@ -28,7 +31,10 @@ pokedex> db.pokemons.find().pretty()
     tipo1: ObjectId('66e9668e1acbf7078bc73bf9'),
     altura: 0.5,
     peso: 9,
-    habilidades: [ { habilidade: 'Torrent' }, { habilidadeOculta: 'Rain Dish' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c17') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c28') }
+    ],
     statusBasicos: {
       hp: 44,
       ataque: 48,
@@ -42,7 +48,8 @@ pokedex> db.pokemons.find().pretty()
       primeira: 'Squirtle',
       segunda: 'Wartortle',
       terceira: 'Blastoise'
-    }
+    },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc06d4ed6377e7c73bfc'),
@@ -50,7 +57,10 @@ pokedex> db.pokemons.find().pretty()
     tipo1: ObjectId('66e9668e1acbf7078bc73bfa'),
     altura: 0.7,
     peso: 6.9,
-    habilidades: [ { habilidade: 'Overgrow' }, { habilidadeOculta: 'Chlorophyll' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c16') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c27') }
+    ],
     statusBasicos: {
       hp: 45,
       ataque: 49,
@@ -60,7 +70,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 45,
       total: 318
     },
-    evolucoes: { primeira: 'Bulbasaur', segunda: 'Ivysaur', terceira: 'Venusaur' }
+    evolucoes: { primeira: 'Bulbasaur', segunda: 'Ivysaur', terceira: 'Venusaur' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73bfd'),
@@ -69,7 +80,10 @@ pokedex> db.pokemons.find().pretty()
     tipo2: ObjectId('66e9668e1acbf7078bc73c07'),
     altura: 1.5,
     peso: 40,
-    habilidades: [ { habilidade: 'Torrent' }, { habilidadeOculta: 'Protean' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c17') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c29') }
+    ],
     statusBasicos: {
       hp: 72,
       ataque: 95,
@@ -79,7 +93,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 122,
       total: 530
     },
-    evolucoes: { primeira: 'Froakie', segunda: 'Frogadier', terceira: 'Greninja' }
+    evolucoes: { primeira: 'Froakie', segunda: 'Frogadier', terceira: 'Greninja' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfd')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73bfe'),
@@ -87,7 +102,10 @@ pokedex> db.pokemons.find().pretty()
     tipo1: ObjectId('66e9668e1acbf7078bc73bfb'),
     altura: 0.4,
     peso: 6,
-    habilidades: [ { habilidade: 'Static' }, { habilidadeOculta: 'Lightning Rod' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c18') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2a') }
+    ],
     statusBasicos: {
       hp: 35,
       ataque: 55,
@@ -97,7 +115,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 90,
       total: 320
     },
-    evolucoes: { primeira: 'Pichu', segunda: 'Pikachu', terceira: 'Raichu' }
+    evolucoes: { primeira: 'Pichu', segunda: 'Pikachu', terceira: 'Raichu' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73bff'),
@@ -106,7 +125,7 @@ pokedex> db.pokemons.find().pretty()
     tipo2: ObjectId('66e9668e1acbf7078bc73c04'),
     altura: 1.5,
     peso: 40.5,
-    habilidades: [ { habilidade: 'Cursed Body' } ],
+    habilidades: [ { habilidade: ObjectId('66ec0fa7b66e26c6edc73c19') } ],
     statusBasicos: {
       hp: 60,
       ataque: 65,
@@ -116,7 +135,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 110,
       total: 500
     },
-    evolucoes: { primeira: 'Gastly', segunda: 'Haunter', terceira: 'Gengar' }
+    evolucoes: { primeira: 'Gastly', segunda: 'Haunter', terceira: 'Gengar' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c00'),
@@ -125,8 +145,9 @@ pokedex> db.pokemons.find().pretty()
     altura: 0.3,
     peso: 6.5,
     habilidades: [
-      { habilidade: [ 'Run Away', 'Adaptability' ] },
-      { habilidadeOculta: 'Anticipation' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1a') },
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1b') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2b') }
     ],
     statusBasicos: {
       hp: 55,
@@ -137,7 +158,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 55,
       total: 325
     },
-    evolucoes: { primeira: 'Eevee' }
+    evolucoes: { primeira: 'Eevee' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c01'),
@@ -145,7 +167,10 @@ pokedex> db.pokemons.find().pretty()
     tipo1: ObjectId('66e9668e1acbf7078bc73c03'),
     altura: 2,
     peso: 122,
-    habilidades: [ { habilidade: 'Pressure' }, { habilidadeOculta: 'Unnerve' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1c') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2c') }
+    ],
     statusBasicos: {
       hp: 106,
       ataque: 110,
@@ -155,7 +180,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 130,
       total: 680
     },
-    evolucoes: { primeira: 'Mewtwo' }
+    evolucoes: { primeira: 'Mewtwo' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c02'),
@@ -164,8 +190,9 @@ pokedex> db.pokemons.find().pretty()
     altura: 1.4,
     peso: 50.2,
     habilidades: [
-      { habilidade: [ 'Keen Eye', 'Iron Fist' ] },
-      { habilidadeOculta: 'Inner Focus' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1d') },
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1e') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2d') }
     ],
     statusBasicos: {
       hp: 50,
@@ -176,7 +203,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 76,
       total: 455
     },
-    evolucoes: { primeira: 'Tyrogue', segunda: 'Hitmonchan' }
+    evolucoes: { primeira: 'Tyrogue', segunda: 'Hitmonchan' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfa')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c03'),
@@ -186,8 +214,8 @@ pokedex> db.pokemons.find().pretty()
     altura: 1.7,
     peso: 50.5,
     habilidades: [
-      { habilidade: [ 'Keen Eye', 'Sturdy' ] },
-      { habilidadeOculta: 'Weak Armor' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1f') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2e') }
     ],
     statusBasicos: {
       hp: 65,
@@ -198,7 +226,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 70,
       total: 465
     },
-    evolucoes: { primeira: 'Skarmory' }
+    evolucoes: { primeira: 'Skarmory' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfa')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c04'),
@@ -208,8 +237,8 @@ pokedex> db.pokemons.find().pretty()
     altura: 1.5,
     peso: 56,
     habilidades: [
-      { habilidade: [ 'Swarm', 'Technician' ] },
-      { habilidadeOculta: 'Steadfast' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c20') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2f') }
     ],
     statusBasicos: {
       hp: 70,
@@ -220,7 +249,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 105,
       total: 500
     },
-    evolucoes: { primeira: 'Scyther', segunda: 'Scizor' }
+    evolucoes: { primeira: 'Scyther', segunda: 'Scizor' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf9')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c05'),
@@ -229,7 +259,10 @@ pokedex> db.pokemons.find().pretty()
     tipo2: ObjectId('66e9668e1acbf7078bc73bfc'),
     altura: 1.9,
     peso: 95,
-    habilidades: [ { habilidade: 'Sand Veil' }, { habilidadeOculta: 'Rough Skin' } ],
+    habilidades: [
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c21') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c30') }
+    ],
     statusBasicos: {
       hp: 108,
       ataque: 130,
@@ -239,7 +272,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 102,
       total: 600
     },
-    evolucoes: { primeira: 'Gible', segunda: 'Gabite', terceira: 'Garchomp' }
+    evolucoes: { primeira: 'Gible', segunda: 'Gabite', terceira: 'Garchomp' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfb')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c06'),
@@ -248,8 +282,8 @@ pokedex> db.pokemons.find().pretty()
     altura: 1.3,
     peso: 57.5,
     habilidades: [
-      { habilidade: [ 'Ice Body', 'Snow Warning' ] },
-      { habilidadeOculta: 'Weak Armor' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c22') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c2e') }
     ],
     statusBasicos: {
       hp: 71,
@@ -264,7 +298,8 @@ pokedex> db.pokemons.find().pretty()
       primeira: 'Vanillite',
       segunda: 'Vanillish',
       terceira: 'Vanilluxe'
-    }
+    },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfc')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c07'),
@@ -274,8 +309,9 @@ pokedex> db.pokemons.find().pretty()
     altura: 1.6,
     peso: 48.4,
     habilidades: [
-      { habilidade: [ 'Synchronize', 'Trace' ] },
-      { habilidadeOculta: 'Telepathy' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c23') },
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c24') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c31') }
     ],
     statusBasicos: {
       hp: 68,
@@ -286,7 +322,8 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 80,
       total: 518
     },
-    evolucoes: { primeira: 'Ralts', segunda: 'Kirlia', terceira: 'Gardevoir' }
+    evolucoes: { primeira: 'Ralts', segunda: 'Kirlia', terceira: 'Gardevoir' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bfb')
   },
   {
     _id: ObjectId('66eabc8bd4ed6377e7c73c08'),
@@ -296,8 +333,9 @@ pokedex> db.pokemons.find().pretty()
     altura: 1,
     peso: 105,
     habilidades: [
-      { habilidade: [ 'Rock Head', 'Sturdy' ] },
-      { habilidadeOculta: 'Sand Veil' }
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c25') },
+      { habilidade: ObjectId('66ec0fa7b66e26c6edc73c1f') },
+      { habilidadeOculta: ObjectId('66ec0fb3b66e26c6edc73c21') }
     ],
     statusBasicos: {
       hp: 55,
@@ -308,6 +346,7 @@ pokedex> db.pokemons.find().pretty()
       velocidade: 35,
       total: 390
     },
-    evolucoes: { primeira: 'Geodude', segunda: 'Graveler', terceira: 'Golem' }
+    evolucoes: { primeira: 'Geodude', segunda: 'Graveler', terceira: 'Golem' },
+    regiao_origem: ObjectId('66f15b77e5b96ae296c73bf9')
   }
 ]

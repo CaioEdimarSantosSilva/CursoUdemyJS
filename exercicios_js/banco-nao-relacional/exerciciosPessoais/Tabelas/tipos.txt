@@ -1,4 +1,3 @@
-pokedex> db.tipos.find().pretty()
 [
   {
     _id: ObjectId('66e9668e1acbf7078bc73bf8'),

@@ -1,0 +1,96 @@
+// MODIFICANDO TABELA TREINADORES
+db.treinadores.update({nome: "Lightyear"}, {$set: {cidade_origem: ObjectId('66f15b77e5b96ae296c73bf8')}})
+
+db.treinadores.update({nome: "Azien"}, {$set: {cidade_origem: ObjectId('66f15b77e5b96ae296c73bfc')}})
+
+db.treinadores.update({nome: "Lorax"}, {$set: {cidade_origem: ObjectId('66f15b77e5b96ae296c73bfd')}})
+
+db.treinadores.update({nome: "Kdu"}, {$set: {cidade_origem: ObjectId('66f15b77e5b96ae296c73bf9')}})
+
+
+
+// MODIFICANDO TABELA POKEMONS 
+
+db.pokemons.update({nome: "Charmander"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}})
+db.pokemons.update({nome: "Squirtle"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Bulbasaur"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Pikachu"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Eevee"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Gengar"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Mewtwo"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf8')}});
+db.pokemons.update({nome: "Greninja"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfd')}});
+db.pokemons.update({nome: "Garchomp"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfb')}});
+db.pokemons.update({nome: "Gardevoir"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfb')}});
+db.pokemons.update({nome: "Hitmonchan"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfa')}});
+db.pokemons.update({nome: "Skarmory"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfa')}});
+db.pokemons.update({nome: "Scyther"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf9')}});
+db.pokemons.update({nome: "Graveler"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bf9')}});
+db.pokemons.update({nome: "Vanilluxe"}, {$set: {regiao_origem: ObjectId('66f15b77e5b96ae296c73bfc')}});
+
+
+//CONSULTA TABELA POKEMONS
+
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: "tipos",
+      localField: "tipo1",
+      foreignField: "_id",
+      as: "tipo_1_info"
+    }
+  },
+  {
+    $lookup: {
+      from: "tipos",
+      localField: "tipo2",
+      foreignField: "_id",
+      as: "tipo_2_info"
+    }
+  },
+  {
+    $lookup: {
+      from: "regioes",
+      localField: "regiao_origem",
+      foreignField: "_id",
+      as: "regiao_origem_info"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      nome: 1,
+      "tipo_1_info.nome": 1,
+      "tipo_2_info.nome": 1,
+      "regiao_origem_info.nome": 1
+    }
+  }
+])
+
+
+//CONSULTA TABELA POKEMONS 2
+
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: "regioes",
+      localField: "regiao_origem",
+      foreignField: "_id",
+      as: "regiao_origem_info"
+    }
+  },
+  {
+        $unwind: "$regiao_origem_info"
+    },
+  {
+        $group: {
+            _id: "$regiao_origem_info",  // Agrupa pelo nome do tipo
+            pokemons: { $push: "$nome" } 
+        }
+    },
+  {
+    $project: {
+      "_id.nome": 1,
+      "pokemons": 1
+    }
+  }
+])

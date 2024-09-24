@@ -2,7 +2,7 @@ cd "arquivos de programas"
 cd mongoDB/Server/7.0/bin
 mongosh
 
-
+cd ../../"Arquivos de Programas"/mongoDB/Server/7.0/bin && mongosh
 
 test> use wm
 switched to db wm
