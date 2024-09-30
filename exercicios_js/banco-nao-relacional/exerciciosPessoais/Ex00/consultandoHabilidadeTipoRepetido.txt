@@ -1,0 +1,56 @@
+db.pokemons.aggregate([
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.habilidade",
+            foreignField: "_id",
+            as: "habilidadeDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.habilidadeOculta",
+            foreignField: "_id",
+            as: "habilidadeOcultaDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo1",
+            foreignField: "_id",
+            as: "tipo_1_info"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo2",
+            foreignField: "_id",
+            as: "tipo_2_info"
+        }
+    },
+    {
+        $match: {
+            $or:[{
+                "habilidadeDetalhes.nome": "Sand Veil"
+                },
+            {
+                "habilidadeOcultaDetalhes.nome": "Sand Veil"
+                }]
+
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            "tipo_1_info.nome": 1,
+            "tipo_2_info.nome": 1,
+            "habilidadeDetalhes.nome": 1,
+            "habilidadeOcultaDetalhes.nome": 1,
+        }
+    }
+
+]).pretty();
