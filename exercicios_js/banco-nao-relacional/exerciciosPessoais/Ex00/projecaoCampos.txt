@@ -1,0 +1,34 @@
+// Exiba o nome e as habilidades de Pokémon que têm mais de 3 habilidades.
+
+db.pokemons.aggregate([
+    {
+        $match: {
+            $expr: { $gt: [{ $size: "$habilidades" }, 2] }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            habilidades: 1
+        }
+    }
+]).pretty();
+
+
+db.pokemons.aggregate([
+    {
+        $match: {
+            $expr: { $gte: [{ $size: "$habilidades" }, 3] }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            habilidades: 1
+        }
+    }
+]).pretty();
+
+

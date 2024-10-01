@@ -1,0 +1,45 @@
+// Encontre todos os Pokémon com ataque maior que 80 e defesa maior que 70.
+// lt é pra achar menor
+// gt é pra achar maior
+
+
+db.pokemons.aggregate([
+    {
+    $match: {
+        "statusBasicos.ataque": {$gt: 80},
+        "statusBasicos.defesa": {$gt: 70}
+    }
+    },
+      {
+        $project: {
+            _id: 0,
+            nome: 1,
+            "statusBasicos.ataque": 1,
+            "statusBasicos.defesa": 1,
+        }
+    }
+]);
+
+
+
+
+
+//Liste todos os Pokémon que não têm um segundo tipo (onde o campo tipo2 não existe).
+
+db.pokemons.aggregate([
+    {
+    $match: {
+        tipo2: {$exists: false}
+    }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            "tipo1": 1,
+            "tipo2": 1,
+        }
+    }
+]);
+
+
