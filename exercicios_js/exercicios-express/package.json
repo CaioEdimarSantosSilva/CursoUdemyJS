@@ -5,12 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
-    "production": "pm2 start index.js --name appx-backend"
+    "production": "pm2 start index.js --name appx-backend",
+    "startEx01": "nodemon ExerciciosExpress/ex01",
+    "startEx02": "nodemon ExerciciosExpress/ex02",
+    "startEx03": "nodemon ExerciciosExpress/ex03",
+    "startEx04": "nodemon ExerciciosExpress/ex04",
+    "startEx05": "nodemon ExerciciosExpress/ex05",
+    "startEx06": "nodemon ExerciciosExpress/ex06",
+    "startEx07": "nodemon ExerciciosExpress/ex07",
+    "startEx08": "nodemon ExerciciosExpress/ex08",
+    "startEx09": "nodemon ExerciciosExpress/ex09",
+    "startEx10": "nodemon ExerciciosExpress/ex10"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "express": "4.16.3",
     "pm2": "5.4.2"
   },
