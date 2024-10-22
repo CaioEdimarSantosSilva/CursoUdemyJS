@@ -1,19 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import BomDia from './componentes/BomDia'
 
-
-
-ReactDOM.render(<BomDia nome = 'Xamis' idade = {1}/>, document.getElementById('root'))
-
-//Forma atual
-//import React from 'react'
-//import ReactDOM from 'react-dom/client'
-
-//const elemento = <h1>React 2</h1>
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
 
 // Crie uma raiz para o elemento DOM
-//const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 // Use o método render da nova API
-//root.render(elemento)
+root.render(<div>
+    <Pai nome="Paulo" sobrenome="Silva">
+        <Filho nome="Pedro"/>
+        <Filho nome="Paulo"/>
+        <Filho nome="Carla"/>
+    </Pai>
+</div>)
+
+
+
+
